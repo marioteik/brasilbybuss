@@ -1,0 +1,28 @@
+<div id="search" class="clearfix">
+    <form class="form-inline" ng-submit="$ctrl.getResults(selectedCity)">
+        <h4 class="text-center" ng-if="$ctrl.cities.length == 0">Carregando as Cidades...</h4>
+        <h4 class="text-center" ng-if="$ctrl.cities.length > 0">Conheça seu próximo destino!</h4>
+
+        <!--div class="form-group"></div-->
+        <div class="input-group col-md-6 col-sm-8 col-md-offset-3 col-sm-offset-2 select2-bootstrap-append">
+            <select type="text" placeholder="Digite sua cidade" id="searchInput"
+                    class="form-control select select2-allow-clear"
+                    ng-model="selectedCity"
+                    autocomplete ng-options="city as city.Name for city in $ctrl.cities track by city.Id"
+                    ng-disabled="$ctrl.cities.length == 0" style="width: 100%;">
+            </select>
+
+            <span class="input-group-btn" style="width: 5%;">
+                <button class="btn btn-default" type="button" style="width: 100%;"
+                        ng-click="$ctrl.getResults(selectedCity)" ng-disabled="$ctrl.cities.length == 0">
+                    <span class="glyphicon glyphicon-search"></span>
+                </button>
+                <!--button class="btn btn-primary"
+                        >
+                    {{$ctrl.btn}}
+                </button-->
+            </span>
+        </div>
+</div>
+</form>
+</div>

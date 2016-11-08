@@ -1,0 +1,20 @@
+<div class="row" id="results" ng-if="$ctrl.city">
+    <div class="col-md-12 images">
+        <img src="/public/images/saopaulo006.jpg" alt="Cidade de São Paulo"
+             ng-if="$ctrl.city.CityId == 'B8398182A2DED0468C84ECA2A8C9C262'"
+             class="img-responsive">
+        <img src="/public/images/950x380.jpg" alt="Cidade do Rio de Janeiro"
+             ng-if="$ctrl.city.CityId == 'D5A3D00DA0441D4BBD7E235F7783F842'"
+             class="img-responsive">
+        <img src="/public/images/panora2.jpg" alt="Distrito Federal"
+             ng-if="$ctrl.city.CityId == '11F3C0177A92C0499889EFE2FDB11CE7'"
+             class="img-responsive">
+        <div ng-if="$ctrl.city.CityId && $ctrl.city.CityId != 'B8398182A2DED0468C84ECA2A8C9C262' && $ctrl.city.CityId != 'D5A3D00DA0441D4BBD7E235F7783F842' && $ctrl.city.CityId != '11F3C0177A92C0499889EFE2FDB11CE7'">
+            <h3 class="text-muted">Sem imagem para esta cidade.</h3>
+            <img src="/public/images/cidadep.png" alt="Nenhuma das cidades Acima"
+                 class="img-responsive">
+        </div>
+
+    </div>
+</div>
+

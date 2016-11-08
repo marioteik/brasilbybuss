@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Site teste para a BrasilByBuss">
+    <meta name="author" content="Mario Alberto dos Santos">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Brasil By Buss | Compre aqui a sua passagem</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="./public/components/html5-boilerplate/dist/css/normalize.css">
+    <link rel="stylesheet" href="./public/components/html5-boilerplate/dist/css/main.css">
+    <link rel="stylesheet" href="./public/components/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="./public/components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/components/select2-bootstrap-theme/dist/select2-bootstrap.min.css">
+
+    <!-- CSS -->
+    <link href="./public/stylesheets/template.css" rel="stylesheet">
+    <link href="./public/stylesheets/style.css" rel="stylesheet">
+
+    <script src="./public/components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+<!-- NAVBAR -->
+<header class="navbar-wrapper">
+    <div class="container">
+        <div class="logo">
+            <img src="/public/images/logo-branco.png" alt="Logo BrasilByBuss">
+        </div>
+    </div>
+</header>
+
+<!-- Carousel -->
+<section id="carousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+        <div class="item active item1">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Compre com facilidade e sem preocupação!</h1>
+                    <p>Feche seu pacote completo de viagem conosco de forma rápida e não se preocupe com mais nada.</p>
+                </div>
+            </div>
+        </div>
+        <div class="item item2">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Viajar.</h1>
+                    <p>Te deixa sem palavras e depois te torna um contador de histórias.</p>
+                </div>
+            </div>
+        </div>
+        <div class="item item3">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Conheça novos lugares Conosco.</h1>
+                    <p>Quando foi a última vez que você fez algo pela primeira vez?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+    </a>
+    <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+    </a>
+</section><!-- /.carousel -->
+
+<section class="container marketing">
+    <div class="row" ng-app="brasilByBussApp">
+        <search></search>
+        <results></results>
+    </div><!-- /.row -->
+
+    <!-- FOOTER -->
+    <footer>
+        <p class="pull-right"><a href="#">Voltar ao Topo</a></p>
+        <p>Teste por Mario Santos</p>
+    </footer>
+
+</section><!-- /.container -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="./public/components/jquery/dist/jquery.min.js"><\/script>')</script>
+<script src="./public/components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./public/components/select2/dist/js/select2.full.min.js"></script>
+<script src="./public/components/angular/angular.js"></script>
+<script src="./public/app/directives/directives.js"></script>
+<script src="./public/app/services/services.js"></script>
+<script src="./public/app/search/search.js"></script>
+<script src="./public/app/results/results.js"></script>
+<script src="./public/app/app.js"></script>
+</body>
+</html>

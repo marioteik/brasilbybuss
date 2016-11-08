@@ -1,0 +1,36 @@
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", Helvetica, Arial, sans-serif; }
+
+.logo {
+  text-align: center; }
+
+#carousel .carousel-caption p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.8em; }
+#carousel .item {
+  background-size: cover;
+  background-position: center center; }
+#carousel .item1 {
+  background-image: url("/public/images/slide1.jpg"); }
+#carousel .item2 {
+  background-image: url("/public/images/slide2.jpg"); }
+#carousel .item3 {
+  background-image: url("/public/images/slide3.jpg"); }
+
+#search {
+  margin-bottom: 40px; }
+  #search #searchInput {
+    width: 100%; }
+
+footer {
+  margin-top: 100px; }
+
+#results .images {
+  text-align: center; }
+  #results .images img {
+    margin: 0 auto; }
+
+/*# sourceMappingURL=style.css.map */

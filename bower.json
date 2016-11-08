@@ -1,0 +1,21 @@
+{
+  "name": "brasilByBuss",
+  "description": "Template de testes para o site Brasil By Buss",
+  "version": "0.1.0",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.5.0",
+    "angular-route": "~1.5.0",
+    "angular-loader": "~1.5.0",
+    "angular-mocks": "~1.5.0",
+    "html5-boilerplate": "^5.3.0",
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7",
+    "angular-typeahead": "^1.0.2",
+    "typeahead.js": "^0.11.1",
+    "bloodhound": "^1.0.4",
+    "select2": "^4.0.3",
+    "select2-bootstrap-theme": "^0.1.0-beta.9"
+  }
+}
